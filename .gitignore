@@ -1,5 +1,5 @@
 # VSCode files
-/__pycache__
+__pycache__/
 
 # Database
 database.db 
