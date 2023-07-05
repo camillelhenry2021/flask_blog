@@ -1,0 +1,8 @@
+# VSCode files
+/__pycache__
+
+# Database
+database.db 
+
+# demo script
+hello.py
