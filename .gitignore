@@ -3,6 +3,7 @@ __pycache__/
 
 # Database
 database.db 
+instance/db.sqlite
 
 # demo script
 hello.py

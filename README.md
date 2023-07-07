@@ -5,6 +5,8 @@ A small web application with a connected database.
 # Build With
 * Flask
 * Bootstrap
+* SQLite
+
 
 # Getting Started 
 
@@ -32,3 +34,5 @@ flask run
 
 # Acknowledgments
 https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+
+https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
