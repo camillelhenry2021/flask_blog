@@ -4,4 +4,22 @@
 <h1 class="title">
   Welcome {{name}}!
 </h1>
+<h2 class="subtitle">
+  Your number of post is : {{nb_posts}}
+</h2>
+<hr>
+{% for post in posts %}
+        <a href="{{url_for('main.post', post_id=post['id']) }}">
+                <h2>{{post['title'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post['timestamp'] }}</span>
+        <a href="{{ url_for('main.edit', id=post['id']) }}">
+          <span class="badge badge-warning">Edit</span>
+        </a>
+        <a href="{{ url_for('main.delete', id=post['id'])}}" onclick="return confirm('Are you sure you want to delete this post?')">
+          <span class="badge badge-danger">Delete</span>
+        </a>
+{% endfor %}
+<hr>
+<a href="{{url_for('main.create')}}">New Post</a>
 {% endblock %}
