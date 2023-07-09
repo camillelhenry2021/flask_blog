@@ -6,6 +6,9 @@
 </h1>
 <h2 class="subtitle">
   Your number of post is : {{nb_posts}}
+  <a href="{{url_for('main.create')}}">
+    <span class="badge badge-success">Create New Post !</span>
+  </a>
 </h2>
 <hr>
 {% for post in posts %}
@@ -20,6 +23,4 @@
           <span class="badge badge-danger">Delete</span>
         </a>
 {% endfor %}
-<hr>
-<a href="{{url_for('main.create')}}">New Post</a>
 {% endblock %}
