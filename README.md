@@ -20,8 +20,8 @@ pre-commit install
 ```
 3. Set Flask environement variables
 ```
-export FLASK_APP=app
-export FLASK_ENV=development
+export FLASK_APP=project
+export FLASK_DEBUG=1
 ```
 4. Init the database
 ```
