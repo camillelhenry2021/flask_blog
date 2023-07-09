@@ -1,6 +1,6 @@
 
 # About The Project
-A small web application with a connected database. 
+A small web application with a connected database.
 
 # Build With
 * Flask
@@ -8,7 +8,7 @@ A small web application with a connected database.
 * SQLite
 
 
-# Getting Started 
+# Getting Started
 
 ## Installation
 1. Clone the repo
@@ -16,6 +16,7 @@ A small web application with a connected database.
 2. Install environement
 ```
 conda env create -f environment. yml
+pre-commit install
 ```
 3. Set Flask environement variables
 ```
