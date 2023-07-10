@@ -2,8 +2,8 @@ import datetime
 from pathlib import Path
 
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash
 
 # init SQLAlchemy so we can use it later in our models
@@ -22,7 +22,7 @@ def create_app():
     login_manager.login_view = "auth.login"
     login_manager.init_app(app)
 
-    from .models import User, Post
+    from .models import Post, User
 
     # needed by Flask LoginManager()
     @login_manager.user_loader

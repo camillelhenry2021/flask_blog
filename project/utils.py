@@ -1,4 +1,5 @@
 from werkzeug.exceptions import abort
+
 from .models import Post
 
 
