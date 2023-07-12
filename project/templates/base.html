@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <section class="hero is-primary is-fullheight">
-        <div class="hero-head">
+    <section>
+        <div>
             <nav class="navbar navbar-expand-md bg-body-tertiary">
                 <div class="container-fluid">
                   <a class="navbar-brand">
@@ -47,8 +47,8 @@
               </nav>
         </div>
 
-        <div class="hero-body">
-            <div class="container-fluid ">
+        <div>
+            <div class="container-fluid p-0">
                 {% for message in get_flashed_messages() %}
                     <div class="alert alert-danger">{{ message }}</div>
                 {% endfor %}

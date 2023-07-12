@@ -1,7 +1,35 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="column is-4 is-offset-4">
+<div class="d-flex justify-content-center" style="background-color: red">
+    <div class="col-6 col-lg-4 d-flex justify-content-center" style="background-color: lightblue">
+        Email adress
+    </div>
+</div>
+
+<div class="d-flex justify-content-center" style="background-color:blue">
+    <div class="col-6 col-lg-4 d-flex justify-content-center" style="background-color: lightgreen">
+        Password
+    </div>
+</div>
+<div class="d-flex justify-content-center" style="background-color:green">
+
+    <div class="col-5 col-md-3 d-flex justify-content-center" style="background-color: lightcoral">
+        Remember me
+    </div>
+    <div class="col-5 col-md-3 d-flex justify-content-center" style="background-color: lightcoral">
+        Forgot your password?
+    </div>
+</div>
+<div class="d-flex justify-content-center" style="background-color:yellow">
+    <div class="col-4 col-md-2 col-lg-1 d-flex justify-content-center" style="background-color:brown">
+        Sign in!
+    </div>
+</div>
+
+
+
+<!-- <div class="column is-4 is-offset-4">
     <h3 class="title">Login</h3>
     <div class="box">
     {% with messages = get_flashed_messages() %}
@@ -13,25 +41,50 @@
     {% endwith %}
 <form method="POST" action="/login">
         <form method="POST" action="/login">
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">
+
+            <div class="col-6 col-sm-10 col-md-6  mb-4 p-0 flex"></div>
+                <div class="form-outline mb-4 p-0">
+                    <input type="email" class="form-control" name="email" placeholder="Email adress"/>
                 </div>
+
+                <div class="form-outline mb-4 p-0">
+                    <input type="password" class="form-control" name="password" placeholder="Password" />
+                </div>
+
+               <div class="row mb-4 p-0">
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="remember" id="form2Example31" />
+                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#!">Forgot password?</a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="field">
-                <div class="control">
-                    <input class="input is-large" type="password" name="password" placeholder="Your Password">
-                </div>
-            </div>
-            <div class="field">
-                <label class="checkbox">
-                    <input type="checkbox" name="remember">
-                    Remember me
-                </label>
-            </div>
-            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+            <button class="btn btn-primary btn-block col-6 col-sm-10 col-md-6 mb-4 mb-4">Login</button>
         </form>
+        </div>
+</div> -->
+
+    <!-- <div class="d-flex justify-content-center col-12" style="background-color: red;">
+        <div class="col-1" style="background-color: blue">
+            2
+        </div>
+
+    </div> -->
+    <!-- <div class="col-12 col-md-6" style="background-color: blue;">
+        1
     </div>
-</div>
+    <div class="col-6" style="background-color: violet;">
+        2
+    </div> -->
+
+
+
+
+
 {% endblock %}
